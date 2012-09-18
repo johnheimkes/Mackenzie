@@ -1,0 +1,23 @@
+# Author: John Heimkes IV <john@markupisart.com>
+#
+# Standard WordPress installation
+# SVN-friendly file structure
+# Staging environment
+
+RewriteEngine on
+RewriteBase /
+
+# SVN-friendly file structure
+RewriteCond %{HTTP_HOST} ^(www.)?mack.local$
+RewriteCond %{REQUEST_URI} !^core/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ core/$1
+RewriteCond %{HTTP_HOST} ^(www.)?mack.local$
+RewriteRule ^(/)?$ core/index.php [L]
+
+# Permalinks
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
