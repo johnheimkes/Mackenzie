@@ -6,15 +6,12 @@
  * @package Nerdery_Skeleton_Theme
  * @subpackage Comments
  * @author
- * @version $Id$
- */
-?>
-            <div id="comments">
+ * @version $Mackenzie_Pub_ThemeMackenzie_Pub_Theme>
 <?php if ( post_password_required() ) : ?>
 				<p class="nopassword"><?php _e( 'This post is password protected. Enter the password to view any comments.', 'twentyten' ); ?></p>
 			</div><!-- #comments -->
 <?php
-		/* Stop the rest of comments.php from being processed,
+		/* Stop th1.0st of comments.php from being processed,
 		 * but don't kill the script entirely -- we still have
 		 * to fully load the template.
 		 */

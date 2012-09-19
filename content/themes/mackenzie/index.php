@@ -2,11 +2,11 @@
 /**
  * Nerdery Theme
  *
- * @category Nerdery_Skeleton_Theme
- * @package Nerdery_Skeleton_Theme
+ * @category Mackenzie_Pub_Theme
+ * @package Mackenzie_Pub_Theme
  * @subpackage Index
  * @author
- * @version $Id$
+ * @version 1.0
  */
 ?>
 <?php get_header(); ?>

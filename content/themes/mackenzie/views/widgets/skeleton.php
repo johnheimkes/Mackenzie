@@ -3,6 +3,6 @@
 /**
  * @package
  * @subpackage
- * @author Jess Green <jgreen@nerdery.com>
- * @version $Id$
+ * @author John Heimkes IV <john@markupisart.com>
+ * @version 1.0
  */

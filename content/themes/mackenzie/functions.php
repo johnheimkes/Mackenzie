@@ -2,12 +2,12 @@
 /**
  * Nerdery Theme
  *
- * @category   Nerdery_Skeleton_Theme
- * @package    Nerdery_Skeleton_Theme
+ * @category   Mackenzie_Pub_Theme
+ * @package    Mackenzie_Pub_Theme
  * @subpackage Functions
- * @author     Jess Green <jgreen@nerdery.com>
+ * @author     John Heimkes IV <john@markupisart.com>
  * @author     Alison Barrett <abarrett@nerdery.com>
- * @version    $Id$
+ * @version    1.0
  */
 
 // TODO: Move the following to a custom theme class

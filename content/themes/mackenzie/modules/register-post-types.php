@@ -2,15 +2,15 @@
 /**
  * Nerdery Theme
  *
- * @category Nerdery_Skeleton_Theme
- * @package Nerdery_Skeleton_Theme
+ * @category Mackenzie_Pub_Theme
+ * @package Mackenzie_Pub_Theme
  * @subpackage Modules_Register_PostTypes
- * @author Jess Green <jgreen@nerdery.com>
- * @version $Id$
+ * @author John Heimkes IV <john@markupisart.com>
+ * @version 1.0
  */
 
-add_action('init', 'nerdery_register_post_types');
-function nerdery_register_post_types()
+add_action('init', 'mack_register_post_types');
+function mack_register_post_types()
 {
     // register your post-types here
     /*
@@ -31,4 +31,6 @@ function nerdery_register_post_types()
             )
         )
     );
+	
+	
 }

@@ -2,11 +2,11 @@
 /**
  * Nerdery Theme
  *
- * @category Nerdery_Skeleton_Theme
- * @package Nerdery_Skeleton_Theme
+ * @category Mackenzie_Pub_Theme
+ * @package Mackenzie_Pub_Theme
  * @subpackage Modules_Register_Taxonomies
- * @author Jess Green <jgreen@nerdery.com>
- * @version $Id$
+ * @author John Heimkes IV <john@markupisart.com>
+ * @version 1.0
  */
 
 add_action('init', 'nerdery_register_taxonomies');
