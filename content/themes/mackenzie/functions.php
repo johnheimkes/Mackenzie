@@ -6,7 +6,6 @@
  * @package    Mackenzie_Pub_Theme
  * @subpackage Functions
  * @author     John Heimkes IV <john@markupisart.com>
- * @author     Alison Barrett <abarrett@nerdery.com>
  * @version    1.0
  */
 

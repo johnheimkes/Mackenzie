@@ -18,7 +18,7 @@ function mack_register_post_types()
      *
      */
     register_post_type(
-        'nerdery_carousel', // prefix your post-type
+        'mack_carousel', // prefix your post-type
         array(
             'labels' => array(
                 'name'          => 'Carousels', // plural name
@@ -32,5 +32,73 @@ function mack_register_post_types()
         )
     );
 	
+	register_post_type(
+		'mack_food',
+		array(
+			'labels' => array(
+				'name'			=> 'Food',
+				'singular_name'	=> 'Food Item',
+				'all_items'		=> 'All Food',
+				'add_new'		=> 'Add New Food Item',
+				'edit_item'		=> 'Edit Food Item',
+			),
+			'public' => true,
+			'supports' => array(
+				'title',
+				'editor',
+				'author',
+				'thumbnail',
+				'custom-fields',
+				'revisions',
+			),
+			'has_archive' => 'food'
+		)
+	);
+	
+	register_post_type(
+		'mack_drink',
+		array(
+			'labels' => array(
+				'name'			=> 'Drinks',
+				'singular_name'	=> 'Drink',
+				'all_items'		=> 'All Drinks',
+				'add_new'		=> 'Add New Drink',
+				'edit_item'		=> 'Edit Drink',
+			),
+			'public' => true,
+			'supports' => array(
+				'title',
+				'editor',
+				'author',
+				'thumbnail',
+				'custom-fields',
+				'revisions',
+			),
+			'has_archive' => 'drinks'
+		)
+	);
+	
+	register_post_type(
+		'mack_merchandise',
+		array(
+			'labels' => array(
+				'name'			=> 'Merchandise',
+				'singular_name'	=> 'Merchandise Item',
+				'all_items'		=> 'All Merchandise',
+				'add_new'		=> 'Add New Merchandise',
+				'edit_item'		=> 'Edit Merchandise Item',
+			),
+			'public' => true,
+			'supports' => array(
+				'title',
+				'editor',
+				'author',
+				'thumbnail',
+				'custom-fields',
+				'revisions',
+			),
+			'has_archive' => 'merchandise'
+		)
+	);
 	
 }
