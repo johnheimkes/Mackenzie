@@ -1,6 +1,6 @@
 <?php
 /**
- * Nerdery Theme
+ * Mackenzie Pub Theme
  *
  * @category Mackenzie_Pub_Theme
  * @package Mackenzie_Pub_Theme
