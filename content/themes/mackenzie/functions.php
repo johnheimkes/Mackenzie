@@ -9,8 +9,6 @@
  * @version    1.0
  */
 
-// TODO: Move the following to a custom theme class
-
 /**
  * Theme Supports
  */
@@ -102,15 +100,6 @@ function nerderyEnqueueStyles()
         'screen, projection'
     );
 
-    // Print Stylesheet
-    wp_register_style(
-        'nerdery-print',
-        NERDERY_THEME_PATH_URL . 'assets/styles/print.css',
-        array('nerdery-reset'),
-        '1.0',
-        'print'
-    );
-
     // IE 9 Stylesheet
     wp_register_style(
         'nerdery-ie9',
@@ -120,34 +109,11 @@ function nerderyEnqueueStyles()
         'screen, projection'
     );
 
-    // IE 8 Stylesheet
-    wp_register_style(
-        'nerdery-ie8',
-        NERDERY_THEME_PATH_URL . 'assets/styles/ie8.css',
-        array('nerdery-screen'),
-        '1.0',
-        'screen, projection'
-    );
-
-    // IE 7 Stylesheet
-    wp_register_style(
-        'nerdery-ie7',
-        NERDERY_THEME_PATH_URL . 'assets/styles/ie7.css',
-        array('nerdery-screen'),
-        '1.0',
-        'screen, projection'
-    );
-
     // Conditional statements for IE stylesheets
     $wp_styles->add_data('nerdery-ie9', 'conditional', 'lte IE 9');
-    $wp_styles->add_data('nerdery-ie8', 'conditional', 'lte IE 8');
-    $wp_styles->add_data('nerdery-ie7', 'conditional', 'lte IE 7');
 
     // Queue the stylesheets. Note that because nerdery-screen was registered
     // with nerdery-reset as a dependency, it does not need to be enqueued here.
     wp_enqueue_style('nerdery-screen');
-    wp_enqueue_style('nerdery-print');
     wp_enqueue_style('nerdery-ie9');
-    wp_enqueue_style('nerdery-ie8');
-    wp_enqueue_style('nerdery-ie7');
 }
