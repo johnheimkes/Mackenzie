@@ -99,6 +99,14 @@ function nerderyEnqueueStyles()
         '1.0',
         'screen, projection'
     );
+	
+    wp_register_style(
+        'nerdery-fonts',
+        NERDERY_THEME_PATH_URL . 'assets/styles/fonts.css',
+        array('nerdery-reset'),
+        '1.0',
+        'screen, projection'
+    );
 
     // IE 9 Stylesheet
     wp_register_style(
@@ -115,5 +123,6 @@ function nerderyEnqueueStyles()
     // Queue the stylesheets. Note that because nerdery-screen was registered
     // with nerdery-reset as a dependency, it does not need to be enqueued here.
     wp_enqueue_style('nerdery-screen');
+	wp_enqueue_style('nerdery-fonts');
     wp_enqueue_style('nerdery-ie9');
 }
