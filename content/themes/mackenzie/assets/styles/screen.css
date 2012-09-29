@@ -6,5 +6,64 @@ Media Type: Screen, Projection
 Width: All Sizes
 ------------------------------------------------------------------------ */
 body {
-
+	background: url('../images/bg-wood.jpg');
 }
+
+.page-wrapper {
+	width: 948px;
+	margin: 25px auto;
+	background: url('../images/bg-paper.jpg') left top repeat-y;
+	position: relative;
+}
+
+.page-wrapper-bottom {
+	width: 948px;
+	height: 98px;
+	background: url('../images/bg-paper-bottom.jpg') left top no-repeat;
+	position: absolute;
+	bottom: 0;
+}
+
+.page-footer {
+	position: relative;
+	z-index: 1;
+}
+
+/* ---------------------------------------------------------------------
+= Header
+------------------------------------------------------------------------ */
+.page-header {
+	width: 1001px;
+	height: 215px;
+	background: url('../images/bg-taps.png') left top no-repeat;
+	background-position: 0 -16px;
+	position: relative;
+	top: -5px;
+	left: -26px;
+}
+
+.logo-container {
+	width: 241px;
+	margin: 0 auto;
+	position: relative;
+	top: 25px;
+	z-index: 1;
+}
+
+.logo {
+	display: block;
+	height: 293px;
+	background: url('../images/logo.png') left top no-repeat;
+	text-indent: -9999px;
+}
+
+nav {
+	width: 992px;
+	height: 78px;
+	background: url('../images/bg-nav.png') left top no-repeat;
+	position: absolute;
+	top: 173px;
+}
+
+
+

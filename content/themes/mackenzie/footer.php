@@ -19,10 +19,11 @@
 					<a href="http://www.facebook.com/pages/Mackenzie/104970706212363?rf=111212918963278" target="_blank">Facebook</a>
 				</li>
 				<li class="social-icon social-icon-twitter">
-					<a href="#" target="_blank">Twitter</p>
+					<a href="#" target="_blank">Twitter</a>
 				</li>
 			</ul>
 		</footer>
+		<div class="page-wrapper-bottom"></div>
 	</div><!-- /.page-wrapper -->
 <?php wp_footer(); ?>
 </body>

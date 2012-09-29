@@ -34,7 +34,9 @@
 <body <?php body_class(); ?>>
     <div class="page-wrapper">
         <header class="page-header">
-        	<h1 class="header-logo"><a href="<?php echo site_url(); ?>">Mackenzie</a></h1>
+        	<h1 class="logo-container">
+				<a href="<?php echo site_url(); ?>" class="logo">Mackenzie</a>
+			</h1>
 			<nav>
 				<?php wp_nav_menu(array(
 					'menu'		=> 'primary-nav',
