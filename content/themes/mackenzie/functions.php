@@ -13,8 +13,6 @@
  * Theme Supports
  */
 add_theme_support('post-thumbnails');
-add_theme_support('custom-background');
-add_theme_support('custom-header');
 add_theme_support('menus');
 
 /**
@@ -22,11 +20,6 @@ add_theme_support('menus');
  */
 include_once 'modules/register-post-types.php';
 include_once 'modules/register-taxonomies.php';
-
-/**
- * Widget Includes
- */
-include_once 'widgets/skeleton-widget.php';
 
 /**
  * Constants
