@@ -33,7 +33,7 @@
 </head>
 <body <?php body_class(); ?>>
     <div class="page-wrapper">
-        <div class="page-header">
+        <header class="page-header">
         	<h1 class="header-logo"><a href="<?php echo site_url(); ?>">Mackenzie</a></h1>
 			<nav>
 				<?php wp_nav_menu(array(
@@ -41,4 +41,6 @@
 					'container'	=> false,
 				)); ?>
 			</nav>
-        </div>
+        </header>
+		
+		<div class="page-content">
