@@ -11,5 +11,5 @@
 ?>
 
 <?php get_header(); ?>
-<?php get_template_part( 'loops/loop' ); ?>
+
 <?php get_footer(); ?>
