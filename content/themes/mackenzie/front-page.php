@@ -66,7 +66,7 @@
 			<h4 class="try-this">Try This</h4>
 			
 			<h5 class="beer-generator-name">Founders Centennial IPA</h5>
-			<p>Brewed in Grand Rapids, MI.  Get ready to bask in the glory of the frothy heads floral bouquet.  Malty undertones with the hop character for a finish that never turns too bitter.  7.2% ABV</p>
+			<p>Brewed in Grand Rapids, MI. Get ready to bask in the glory of the frothy heads floral bouquet. Malty undertones with the hop character for a finish that never turns too bitter. 7.2% ABV</p>
 		</div>
 		
 		<a href="<?php echo site_url(); ?>drinks">See full beer list &amp; rate this beer.</a>
