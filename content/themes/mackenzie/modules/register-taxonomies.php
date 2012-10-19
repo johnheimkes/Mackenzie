@@ -9,8 +9,75 @@
  * @version 1.0
  */
 
-add_action('init', 'nerdery_register_taxonomies');
-function nerdery_register_taxonomies()
+add_action('init', 'mack_register_taxonomies');
+function mack_register_taxonomies()
 {
-    // register your taxonomies
+	register_taxonomy(
+        'mack_food_category',
+        array(
+            'mack_food',
+        ),
+        array(
+            'labels'       => array(
+                'name'              => 'Food Categories',
+                'singular_name'     => 'Food Category',
+                'search_items'      => 'Search Food Categories',
+                'all_items'         => 'All Food Categories',
+                'parent_item'       => 'Parent Food Category',
+                'parent_item_colon' => 'Parent Food Category:',
+                'edit_item'         => 'Edit Food Category',
+                'update_item'       => 'Update Food Category',
+                'add_new_item'      => 'Add New Food Category',
+                'new_item_name'     => 'New Food Category Name',
+                'menu_name'         => 'Food Categories',
+            ),
+            'rewrite'      => array('slug' => 'food-category'),
+        )
+    );
+	
+	register_taxonomy(
+	'mack_drink_category',
+        array(
+            'mack_drink',
+        ),
+        array(
+            'labels'       => array(
+                'name'              => 'Drink Categories',
+                'singular_name'     => 'Drink Category',
+                'search_items'      => 'Search Drink Categories',
+                'all_items'         => 'All Drink Categories',
+                'parent_item'       => 'Parent Drink Category',
+                'parent_item_colon' => 'Parent Drink Category:',
+                'edit_item'         => 'Edit Drink Category',
+                'update_item'       => 'Update Drink Category',
+                'add_new_item'      => 'Add New Drink Category',
+                'new_item_name'     => 'New Drink Category Name',
+                'menu_name'         => 'Drink Categories',
+            ),
+            'rewrite'      => array('slug' => 'drink-category'),
+        )
+    );
+	
+	register_taxonomy(
+	'mack_merch_category',
+        array(
+            'mack_merch',
+        ),
+        array(
+            'labels'       => array(
+                'name'              => 'Merchandise Categories',
+                'singular_name'     => 'Merchandise Category',
+                'search_items'      => 'Search Merchandise Categories',
+                'all_items'         => 'All Merchandise Categories',
+                'parent_item'       => 'Parent Merchandise Category',
+                'parent_item_colon' => 'Parent Merchandise Category:',
+                'edit_item'         => 'Edit Merchandise Category',
+                'update_item'       => 'Update Merchandise Category',
+                'add_new_item'      => 'Add New Merchandise Category',
+                'new_item_name'     => 'New Merchandise Category Name',
+                'menu_name'         => 'Merchandise Categories',
+            ),
+            'rewrite'      => array('slug' => 'merchandise-category'),
+        )
+    );	
 }
