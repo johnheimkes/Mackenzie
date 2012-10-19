@@ -288,5 +288,25 @@ nav .menu {
 }
 
 .specials-module {
-	text-align: middle;
+	text-align: center;
+}
+
+.monthly-specials,
+.pint-glass,
+.try-this {
+	display: inline-block;
+}
+
+.monthly-specials {
+	width: 250px;
+}
+
+.pint-glass {
+	width: 152px;
+	height: 334px;
+	background: url('../images/beer-mug.png') no-repeat top left;
+}
+
+.try-this {
+	width: 334px;
 }
