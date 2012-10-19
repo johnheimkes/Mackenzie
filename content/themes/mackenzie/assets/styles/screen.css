@@ -244,3 +244,49 @@ nav .menu {
 	height: 89px;
 	background: url('../images/amp-white.png') no-repeat top left;
 }
+
+.happy-hour {
+	width: 806px;
+	margin: 0 auto;
+	padding: 10px 0;
+	border-top: 4px solid #c9bfb7;
+	border-bottom: 4px solid #c9bfb7;
+	text-align: center;
+	line-height: 2;
+}
+
+.asterisk {
+	display: inline-block;
+	width: 64px;
+	height: 16px;
+	background: url('../images/stars.png') no-repeat top left;
+}
+
+.happy-hour h3 {
+	display: inline-block;
+	padding: 0 15px;
+	color: #391905;
+	font-size: 30px;
+	font-family: 'bitterbold';
+}
+
+.happy-hour p {
+	text-transform: uppercase;
+	color: #845a3f;
+	font-family: 'bitteritalic';
+	font-size: 24px;
+}
+
+.amp-replace-yellow {
+	display: inline-block;
+	width: 48px;
+	height: 40px;
+	position: relative;
+	top: 5px;
+	background: url('../images/amp-gold.png') no-repeat top left;
+	text-indent: -9999px;
+}
+
+.specials-module {
+	text-align: middle;
+}

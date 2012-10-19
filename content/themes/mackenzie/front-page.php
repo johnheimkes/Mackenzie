@@ -38,12 +38,14 @@
 </div>
 
 <div class="happy-hour">
-	<h3 class="heading-amp">Join Us For Happy Hour</h3>
+	<span class="asterisk"></span>
+	<h3>Join Us For Happy Hour</h3>
+	<span class="asterisk"></span>
 	<p>Mon - Fri 2-6PM <span class="amp-replace amp-replace-yellow">&amp;</span> Sun - Wed late night 11-2am</p>
 </div>
 
 <div class="specials-module">
-	<div class="1of2 monthly-specials">
+	<div class="monthly-specials">
 		<h3 class="heading-section">Monthly Specials</h3>
 		
 		<h4 class="heading-list">Food:</h4>
@@ -61,7 +63,9 @@
 		</ul>
 	</div>
 	
-	<div class="1of2 try-this">
+	<div class="pint-glass"></div>
+	
+	<div class="try-this">
 		<h3 class="heading-section no-border">Don't Know What To Drink?</h3>
 		
 		<div class="beer-generator">
