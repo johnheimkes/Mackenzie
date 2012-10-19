@@ -7,6 +7,7 @@ Width: All Sizes
 ------------------------------------------------------------------------ */
 body {
 	background: url('../images/bg-wood.jpg');
+	font-family: 'bitterregular', Georgia, Times, serif;
 }
 
 .page-wrapper {
@@ -151,3 +152,95 @@ nav .menu {
 
 .social-icon-facebook { background: url('../images/icon-fb.png') no-repeat left top; }
 .social-icon-twitter { background: url('../images/icon-twitter.png') no-repeat left top; }
+
+/* ---------------------------------------------------------------------
+= Global
+------------------------------------------------------------------------ */
+.align-center {
+	text-align: center;
+}
+
+/* ---------------------------------------------------------------------
+= Homepage
+------------------------------------------------------------------------ */
+.tagline {
+	width: 530px;
+	margin: 0 auto;
+	font-size: 16px;
+	color: #391905;
+	line-height: 1.2;
+}
+
+.tagline-heading {
+	font-family: 'bitterbold';
+	font-size: 21px;
+	padding: 0 0 10px;
+}
+
+.main-carousel {
+	width: 854px;
+	height: 348px;
+	margin: 40px auto;
+	background: url('../images/bg-carousel-shadow.png') no-repeat left top;
+	text-align: center;
+	position: relative;
+}
+
+.carousel {
+	width: 800px;
+	height: 340px;
+	margin: 0 auto;
+	border: 9px solid #ffffff;
+	position: relative;
+	z-index: 1;
+}
+
+.carousel-shadow {
+	width: 800px;
+	height: 340px;
+	position: absolute;
+	z-index: 999;
+	-webkit-box-shadow: inset 0px 0px 14px 1px #000000;
+	-moz-box-shadow: inset 0px 0px 14px 1px #000000;
+	box-shadow: inset 0px 0px 14px 1px #000000;
+}
+
+.main-carousel-nav {
+	position: absolute;
+	top: 111px;
+	left: 16px;
+	z-index: 2;
+}
+
+.main-carousel-nav-item {
+	display: inline-block;
+	text-indent: -9999px;
+	vertical-align: middle;
+}
+
+.main-carousel-link {
+	display: block;
+	text-decoration: none;
+}
+
+.main-carousel-link:hover {
+	background-position: bottom;
+}
+
+.main-carousel-beer-link {
+	width: 354px;
+	height: 123px;
+	background: url('../images/link-beer.png') no-repeat top left;
+}
+
+.main-carousel-food-link {
+	width: 362px;
+	height: 123px;
+	background: url('../images/link-food.png') no-repeat top left;
+}
+
+.main-carousel-sep {
+	width: 97px;
+	height: 89px;
+	background: url('../images/amp-white.png') no-repeat top left;
+}

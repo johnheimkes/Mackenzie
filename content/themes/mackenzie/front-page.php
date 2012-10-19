@@ -13,23 +13,26 @@
 <?php get_header(); ?>
 
 <div class="tagline align-center">
-	<h2 class="heading-tagline"><?php bloginfo('description'); ?></h2>
+	<h2 class="tagline-heading"><?php bloginfo('description'); ?></h2>
 	<p>MACKENZIE is known throughout the Twin Cities as having one of the best selections of Craft beers available.</p>
 </div>
 
 <div class="main-carousel">
 	<div class="carousel">
-		<img src="http://placekitten.com/800/340" alt="Kitties!!!!" />
+		<div class="carousel-slide">
+			<div class="carousel-shadow"></div>
+			<img src="http://placekitten.com/800/340" alt="Kitties!!!!" />
+		</div>
 	</div>
 	<ul class="main-carousel-nav">
 		<li class="main-carousel-nav-item">
-			<a href="<?php echo site_url(); ?>drinks">Beer</a>
+			<a href="<?php echo site_url(); ?>drinks" class="main-carousel-beer-link main-carousel-link">Beer</a>
 		</li>
 		
-		<li class="main-carousel-sep">&amp;</li>
+		<li class="main-carousel-nav-item main-carousel-sep">&amp;</li>
 		
 		<li class="main-carousel-nav-item">
-			<a href="<?php echo site_url(); ?>food">Food</a>
+			<a href="<?php echo site_url(); ?>food" class="main-carousel-food-link main-carousel-link">Food</a>
 		</li>
 	</ul>
 </div>
