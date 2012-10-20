@@ -48,38 +48,42 @@
 	<div class="monthly-specials">
 		<h3 class="heading-section">Monthly Specials</h3>
 		
-		<h4 class="heading-list">Food:</h4>
-		<ul class="list-specials">
-			<li>Barbacoa Tacos</li>
-			<li>Buffalo Chicken Wrap</li>
-			<li>Fish Tacos</li>
-		</ul>
+		<div class="special-list-container">
+			<h4 class="heading-list">Food:</h4>
+			<ul class="list-specials list-specials-food">
+				<li>Barbacoa Tacos</li>
+				<li>Buffalo Chicken Wrap</li>
+				<li>Fish Tacos</li>
+			</ul>
 		
-		<h4 class="heading-list">Beer:</h4>
-		<ul class="list-specials">
-			<li>Alaskan White Ale</li>
-			<li>Big Sky IPA</li>
-			<li>Summit EPA</li>
-		</ul>
+			<h4 class="heading-list">Beer:</h4>
+			<ul class="list-specials">
+				<li>Alaskan White Ale</li>
+				<li>Big Sky IPA</li>
+				<li>Summit EPA</li>
+			</ul>
+		</div>
 	</div>
 	
 	<div class="pint-glass"></div>
 	
 	<div class="try-this">
-		<h3 class="heading-section no-border">Don't Know What To Drink?</h3>
+		<h3 class="heading-section dont-know align-left">Don't Know <span class="align-right">What To Drink?</span></h3>
 		
 		<div class="beer-generator">
-			<a href="#">Beer Please</a>
-			<h4 class="try-this">Try This</h4>
+			<a href="#" class="beer-please">Beer Please</a>
+			<h4 class="try-this-heading">Try This</h4>
 			
-			<h5 class="beer-generator-name">Founders Centennial IPA</h5>
-			<p>Brewed in Grand Rapids, MI. Get ready to bask in the glory of the frothy heads floral bouquet. Malty undertones with the hop character for a finish that never turns too bitter. 7.2% ABV</p>
+			<div class="beer-generator-description align-left">
+				<h5 class="beer-generator-name">Founders Centennial IPA</h5>
+				<p>Brewed in Grand Rapids, MI. Get ready to bask in the glory of the frothy heads floral bouquet. Malty undertones with the hop character for a finish that never turns too bitter. 7.2% ABV</p>
+			</div>
 		</div>
 		
-		<a href="<?php echo site_url(); ?>drinks">See full beer list &amp; rate this beer.</a>
+		<a href="<?php echo site_url(); ?>drinks" class="drinks-link">See full beer list &amp; rate this beer.</a>
 		
-		<h3 class="heading-section">Events</h3>
-		<p>Join us the first Wednesday of the month for music with Katey Bellville &amp; Friends - Country Bluegrass. Music from 9 - 11 pm</p>
+		<h3 class="heading-section try-this-events">Events</h3>
+		<p class="special-events-info align-left">Join us the first Wednesday of the month for music with Katey Bellville &amp; Friends - Country Bluegrass. Music from 9 - 11 pm</p>
 	</div>
 </div>
 

@@ -30,7 +30,7 @@ body {
 }
 
 .page-footer {
-	padding: 20px 76px;
+	padding: 60px 76px 20px;
 	position: relative;
 	z-index: 1;
 }
@@ -153,12 +153,6 @@ nav .menu {
 .social-icon-facebook { background: url('../images/icon-fb.png') no-repeat left top; }
 .social-icon-twitter { background: url('../images/icon-twitter.png') no-repeat left top; }
 
-/* ---------------------------------------------------------------------
-= Global
------------------------------------------------------------------------- */
-.align-center {
-	text-align: center;
-}
 
 /* ---------------------------------------------------------------------
 = Homepage
@@ -289,24 +283,138 @@ nav .menu {
 
 .specials-module {
 	text-align: center;
+	margin-top: 60px;
 }
 
 .monthly-specials,
 .pint-glass,
 .try-this {
 	display: inline-block;
+	vertical-align: top;
 }
 
 .monthly-specials {
 	width: 250px;
+	line-height: 1.5;
 }
 
 .pint-glass {
 	width: 152px;
-	height: 334px;
+	height: 345px;
+	margin: 26px 31px;
 	background: url('../images/beer-mug.png') no-repeat top left;
 }
 
 .try-this {
 	width: 334px;
 }
+
+.special-list-container {
+	margin-top: 3px;
+	padding-top: 30px;
+	color: #845a3f;
+}
+
+.heading-section {
+	font-family: 'bitterbold';
+	font-size: 26px;
+	padding-bottom: 10px;
+	background: url('../images/bg-heading-specials.png') repeat-x bottom left;
+}
+
+.heading-list {
+	font-family: 'bitterbold';
+	font-size: 24px;
+}
+
+.list-specials {
+	font-family: 'bitteritalic';
+	font-size: 18px;
+}
+
+.list-specials-food {
+	margin-bottom: 80px;
+}
+
+.dont-know {
+	background: none;
+	padding: 0 18px;
+}
+
+.try-this .align-right {
+	display: block;
+}
+
+.beer-please {
+	display: inline-block;
+	width: 115px;
+	height: 119px;
+	float: left;
+	background: url('../images/sprite-bottlecap.png') no-repeat top left;
+	text-indent: -9999px;
+	position: relative;
+	top: -7px;
+	left: 13px;
+}
+
+.beer-please:hover { background-position: bottom; }
+
+.try-this-heading {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 20px 0;
+	width: 178px;
+	height: 39px;
+	background: url('../images/heading-try-this.png') no-repeat top left;
+	text-indent: -9999px;
+}
+
+.beer-generator-description {
+	width: 218px;
+	color: #391905;
+	margin: 14px 0 0 124px;
+	font-size: 13px;
+	font-family: 'bitteritalic';
+	line-height: 1.2;
+}
+
+.beer-generator-name {
+	font-size: 16px;
+	font-family: 'bitterbold';
+	margin-bottom: 5px;
+}
+
+.drinks-link {
+	display: block;
+	margin: 15px 0 20px;
+	font-family: 'bitteritalic';
+	font-size: 20px;
+	color: #845a3f;
+}
+
+.drinks-link:hover {
+	color: #391905;
+}
+
+.try-this-events {
+	width: 115px;
+	margin: 0 auto;
+}
+
+.special-events-info {
+	margin: 15px 0 0;
+	color: #845a3f;
+	font-size: 14px;
+	line-height: 1.2;
+}
+
+/* ---------------------------------------------------------------------
+= Global
+------------------------------------------------------------------------ */
+.align-center { text-align: center; }
+
+.no-border { border: none; }
+
+.align-right { text-align: right; }
+
+.align-left { text-align: left; }
