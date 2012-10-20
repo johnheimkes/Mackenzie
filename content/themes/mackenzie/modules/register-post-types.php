@@ -51,7 +51,6 @@ function mack_register_post_types()
 				'custom-fields',
 				'revisions',
 			),
-			'has_archive' => 'food'
 		)
 	);
 	
@@ -74,7 +73,6 @@ function mack_register_post_types()
 				'custom-fields',
 				'revisions',
 			),
-			'has_archive' => 'drinks'
 		)
 	);
 	

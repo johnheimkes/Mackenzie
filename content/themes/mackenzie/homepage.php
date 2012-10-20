@@ -1,5 +1,7 @@
 <?php
 /**
+ * Template Name: Home
+ *
  * Mackenzie Pub Theme
  *
  * @category Nerdery_Skeleton_Theme
