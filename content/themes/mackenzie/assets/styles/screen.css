@@ -471,26 +471,76 @@ nav .menu {
 
 .menu-nav-item {
 	float: left;
-	padding-top: 10px;
-	padding-bottom: 10px;
 	margin-bottom: 5px;
+	border-left: 4px solid #d9c9b4;
+}
+
+.menu-nav-item:first-child {
+	border: none;
 }
 
 .menu-nav-beer,
-.menu-nav-wine {
-	padding-right: 36px;
-	padding-left: 36px;
+.menu-nav-wine { padding: 10px 36px; }
+
+.menu-nav-liquor { padding: 10px 27px; }
+
+.menu-nav-nonalcoholic { padding: 10px 23px; }
+
+.menu-nav-specials { padding: 10px 31px; }
+
+.menu-nav-starters { padding: 10px 61px; }
+
+.menu-nav-entrees { padding: 10px 69px; }
+
+.menu-nav-item a {
+	display: block;
+	height: 19px;
+	text-indent: -9999px;
 }
 
-.menu-nav-liquor {
-	padding-right: 27px;
-	padding-left: 27px;
+.menu-nav-item a:hover,
+.menu-nav-item a.current {
+	background-position: bottom;
 }
 
-.menu-nav-nonalcoholic {
-	padding-right: 23px;
-	padding-left: 23px;
+.menu-nav-beer a {
+	width: 83px;
+	background: url('../images/heading-beer.png') no-repeat top left;
 }
+
+.menu-nav-wine a {
+	width: 84px;
+	background: url('../images/heading-wine.png') no-repeat top left;
+}
+
+.menu-nav-liquor a {
+	width: 116px;
+	background: url('../images/heading-liquor.png') no-repeat top left;
+}
+
+.menu-nav-nonalcoholic a {
+	width: 251px;
+	background: url('../images/heading-nonalcoholic.png') no-repeat top left;
+}
+
+.menu-nav-specials a {
+	width: 150px;
+	background: url('../images/heading-specials.png') no-repeat top left;
+}
+
+.menu-nav-starters a {
+	width: 166px;
+	background: url('../images/heading-starters.png') no-repeat top left;
+}
+
+.menu-nav-entrees a {
+	width: 144px;
+	background: url('../images/heading-entrees.png') no-repeat top left;
+}
+
+.menu-head { border-bottom: 2px solid #cabfb9; }
+
+
 
 /* ---------------------------------------------------------------------
 = Global
