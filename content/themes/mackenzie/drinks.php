@@ -26,4 +26,109 @@
 	</div>
 </div>
 
+<div class="menu-container">
+	<ul class="menu-nav menu-nav-drinks">
+		<li class="menu-nav-item menu-nav-beer">
+			<a href="#">Beer</a>
+		</li>
+		<li class="menu-nav-item menu-nav-wine">
+			<a href="#">Wine</a>
+		</li>
+		<li class="menu-nav-item menu-nav-liquor">
+			<a href="#">Liquor</a>
+		</li><li class="menu-nav-item menu-nav-nonalcoholic">
+			<a href="#">Non-Alcoholic</a>
+		</li>
+	</ul>
+	
+	<div class="menu-body">
+		<div class="menu-head">
+			<div class="menu-heading-container menu-heading-name">
+				<h3 class="menu-heading">Beer Name,Location &amp; Description</h3>
+			</div>
+			<div class="menu-heading-container menu-heading-abv">
+				<h3 class="menu-heading">ABV</h3>
+			</div>
+			<div class="menu-heading-container menu-heading-last">
+				<h3 class="menu-heading">Rating</h3>
+			</div>
+		</div>
+		<!-- begin if -->
+		<div class="menu-item">
+			<div class="menu-item-cell menu-item-cell-description">
+				<h4>Alaskan White Ale</h4>
+				<p>Brewed in Juneau, AK. This Belgian-style Whitbier has a soft, slightly sweet base with the unique spice aroma of coriander and a crisp citrus finish of orange peel.</p>
+			</div>
+			<div class="menu-item-cell menu-item-cell-abv">
+				<h4>5.3% ABV</h4>
+			</div>
+			<div class="menu-item-cell menu-item-cell-last">
+				<span class="rating">3.5/4</span>
+			</div>
+		</div>
+		<!-- endif -->
+		
+		<div class="menu-item">
+			<div class="menu-item-cell menu-item-cell-description">
+				<h4>Alaskan White Ale</h4>
+				<p>Brewed in Juneau, AK. This Belgian-style Whitbier has a soft, slightly sweet base with the unique spice aroma of coriander and a crisp citrus finish of orange peel.</p>
+			</div>
+			<div class="menu-item-cell menu-item-cell-abv">
+				<h4>5.3% ABV</h4>
+			</div>
+			<div class="menu-item-cell menu-item-cell-last">
+				<span class="rating">3.5/4</span>
+			</div>
+		</div>
+		<div class="menu-item">
+			<div class="menu-item-cell menu-item-cell-description">
+				<h4>Alaskan White Ale</h4>
+				<p>Brewed in Juneau, AK. This Belgian-style Whitbier has a soft, slightly sweet base with the unique spice aroma of coriander and a crisp citrus finish of orange peel.</p>
+			</div>
+			<div class="menu-item-cell menu-item-cell-abv">
+				<h4>5.3% ABV</h4>
+			</div>
+			<div class="menu-item-cell menu-item-cell-last">
+				<span class="rating">3.5/4</span>
+			</div>
+		</div>
+		<div class="menu-item">
+			<div class="menu-item-cell menu-item-cell-description">
+				<h4>Alaskan White Ale</h4>
+				<p>Brewed in Juneau, AK. This Belgian-style Whitbier has a soft, slightly sweet base with the unique spice aroma of coriander and a crisp citrus finish of orange peel.</p>
+			</div>
+			<div class="menu-item-cell menu-item-cell-abv">
+				<h4>5.3% ABV</h4>
+			</div>
+			<div class="menu-item-cell menu-item-cell-last">
+				<span class="rating">3.5/4</span>
+			</div>
+		</div>
+		<div class="menu-item">
+			<div class="menu-item-cell menu-item-cell-description">
+				<h4>Alaskan White Ale</h4>
+				<p>Brewed in Juneau, AK. This Belgian-style Whitbier has a soft, slightly sweet base with the unique spice aroma of coriander and a crisp citrus finish of orange peel.</p>
+			</div>
+			<div class="menu-item-cell menu-item-cell-abv">
+				<h4>5.3% ABV</h4>
+			</div>
+			<div class="menu-item-cell menu-item-cell-last">
+				<span class="rating">3.5/4</span>
+			</div>
+		</div>
+		<div class="menu-item">
+			<div class="menu-item-cell menu-item-cell-description">
+				<h4>Alaskan White Ale</h4>
+				<p>Brewed in Juneau, AK. This Belgian-style Whitbier has a soft, slightly sweet base with the unique spice aroma of coriander and a crisp citrus finish of orange peel.</p>
+			</div>
+			<div class="menu-item-cell menu-item-cell-abv">
+				<h4>5.3% ABV</h4>
+			</div>
+			<div class="menu-item-cell menu-item-cell-last">
+				<span class="rating">3.5/4</span>
+			</div>
+		</div>
+	</div>
+</div>
+
 <?php get_footer(); ?>

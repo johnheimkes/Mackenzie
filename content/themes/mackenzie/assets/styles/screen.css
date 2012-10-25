@@ -459,6 +459,39 @@ nav .menu {
 	color: #391905;
 }
 
+.menu-container {
+	overflow: hidden;
+}
+
+.menu-nav {
+	margin-top: 30px;
+	border-bottom: 4px solid #d6c6b1;
+	overflow: hidden;
+}
+
+.menu-nav-item {
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 5px;
+}
+
+.menu-nav-beer,
+.menu-nav-wine {
+	padding-right: 36px;
+	padding-left: 36px;
+}
+
+.menu-nav-liquor {
+	padding-right: 27px;
+	padding-left: 27px;
+}
+
+.menu-nav-nonalcoholic {
+	padding-right: 23px;
+	padding-left: 23px;
+}
+
 /* ---------------------------------------------------------------------
 = Global
 ------------------------------------------------------------------------ */
