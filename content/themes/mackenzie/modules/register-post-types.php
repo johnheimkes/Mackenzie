@@ -50,7 +50,7 @@ function mack_register_post_types()
 				'thumbnail',
 				'revisions',
 			),
-			'has_archive' => 'food',
+			'has_archive' => true,
 			'rewrite' => array(
 				'slug' => 'food',
 			),
@@ -75,7 +75,7 @@ function mack_register_post_types()
 				'thumbnail',
 				'revisions',
 			),
-			'has_archive' => 'drink',
+			'has_archive' => true,
 			'rewrite' => array(
 				'slug' => 'drinks',
 			),
@@ -100,7 +100,7 @@ function mack_register_post_types()
 				'thumbnail',
 				'revisions',
 			),
-			'has_archive' => 'merchandise',
+			'has_archive' => true,
 			'rewrite' => array(
 				'slug' => 'merchandise',
 			),

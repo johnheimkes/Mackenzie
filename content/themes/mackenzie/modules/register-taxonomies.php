@@ -31,7 +31,11 @@ function mack_register_taxonomies()
                 'new_item_name'     => 'New Food Category Name',
                 'menu_name'         => 'Food Categories',
             ),
-            'rewrite'      => array('slug' => 'food-category'),
+            'hierarchical' => true,
+            'show_ui'      => true,
+            'rewrite' 	   => array(
+				'slug' => 'food-category'
+			),
         )
     );
 	
@@ -54,7 +58,11 @@ function mack_register_taxonomies()
                 'new_item_name'     => 'New Drink Category Name',
                 'menu_name'         => 'Drink Categories',
             ),
-            'rewrite'      => array('slug' => 'drink-category'),
+            'hierarchical' => true,
+            'show_ui'      => true,
+            'rewrite'      => array(
+				'slug' => 'drink-category'
+			),
         )
     );
 	
@@ -77,7 +85,11 @@ function mack_register_taxonomies()
                 'new_item_name'     => 'New Merchandise Category Name',
                 'menu_name'         => 'Merchandise Categories',
             ),
-            'rewrite'      => array('slug' => 'merchandise-category'),
+            'hierarchical' => true,
+            'show_ui'      => true,
+            'rewrite'      => array(
+				'slug' => 'merchandise-category'
+			),
         )
     );	
 }
