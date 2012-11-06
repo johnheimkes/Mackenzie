@@ -54,77 +54,77 @@
 			</div>
 		</div>
 		<!-- begin if -->
-		<div class="menu-item">
-			<div class="menu-item-cell menu-item-cell-description">
+		<div class="menu-container">
+			<div class="menu-container-cell menu-container-cell-description">
 				<h4>Alaskan White Ale</h4>
 				<p>Brewed in Juneau, AK. This Belgian-style Whitbier has a soft, slightly sweet base with the unique spice aroma of coriander and a crisp citrus finish of orange peel.</p>
 			</div>
-			<div class="menu-item-cell menu-item-cell-abv">
+			<div class="menu-container-cell menu-container-cell-abv">
 				<h4>5.3% ABV</h4>
 			</div>
-			<div class="menu-item-cell menu-item-cell-last">
+			<div class="menu-container-cell menu-container-cell-last">
 				<span class="rating">3.5/4</span>
 			</div>
 		</div>
 		<!-- endif -->
 		
-		<div class="menu-item">
-			<div class="menu-item-cell menu-item-cell-description">
+		<div class="menu-container">
+			<div class="menu-container-cell menu-container-cell-description">
 				<h4>Alaskan White Ale</h4>
 				<p>Brewed in Juneau, AK. This Belgian-style Whitbier has a soft, slightly sweet base with the unique spice aroma of coriander and a crisp citrus finish of orange peel.</p>
 			</div>
-			<div class="menu-item-cell menu-item-cell-abv">
+			<div class="menu-container-cell menu-container-cell-abv">
 				<h4>5.3% ABV</h4>
 			</div>
-			<div class="menu-item-cell menu-item-cell-last">
+			<div class="menu-container-cell menu-container-cell-last">
 				<span class="rating">3.5/4</span>
 			</div>
 		</div>
-		<div class="menu-item">
-			<div class="menu-item-cell menu-item-cell-description">
+		<div class="menu-container">
+			<div class="menu-container-cell menu-container-cell-description">
 				<h4>Alaskan White Ale</h4>
 				<p>Brewed in Juneau, AK. This Belgian-style Whitbier has a soft, slightly sweet base with the unique spice aroma of coriander and a crisp citrus finish of orange peel.</p>
 			</div>
-			<div class="menu-item-cell menu-item-cell-abv">
+			<div class="menu-container-cell menu-container-cell-abv">
 				<h4>5.3% ABV</h4>
 			</div>
-			<div class="menu-item-cell menu-item-cell-last">
+			<div class="menu-container-cell menu-container-cell-last">
 				<span class="rating">3.5/4</span>
 			</div>
 		</div>
-		<div class="menu-item">
-			<div class="menu-item-cell menu-item-cell-description">
+		<div class="menu-container">
+			<div class="menu-container-cell menu-container-cell-description">
 				<h4>Alaskan White Ale</h4>
 				<p>Brewed in Juneau, AK. This Belgian-style Whitbier has a soft, slightly sweet base with the unique spice aroma of coriander and a crisp citrus finish of orange peel.</p>
 			</div>
-			<div class="menu-item-cell menu-item-cell-abv">
+			<div class="menu-container-cell menu-container-cell-abv">
 				<h4>5.3% ABV</h4>
 			</div>
-			<div class="menu-item-cell menu-item-cell-last">
+			<div class="menu-container-cell menu-container-cell-last">
 				<span class="rating">3.5/4</span>
 			</div>
 		</div>
-		<div class="menu-item">
-			<div class="menu-item-cell menu-item-cell-description">
+		<div class="menu-container">
+			<div class="menu-container-cell menu-container-cell-description">
 				<h4>Alaskan White Ale</h4>
 				<p>Brewed in Juneau, AK. This Belgian-style Whitbier has a soft, slightly sweet base with the unique spice aroma of coriander and a crisp citrus finish of orange peel.</p>
 			</div>
-			<div class="menu-item-cell menu-item-cell-abv">
+			<div class="menu-container-cell menu-container-cell-abv">
 				<h4>5.3% ABV</h4>
 			</div>
-			<div class="menu-item-cell menu-item-cell-last">
+			<div class="menu-container-cell menu-container-cell-last">
 				<span class="rating">3.5/4</span>
 			</div>
 		</div>
-		<div class="menu-item">
-			<div class="menu-item-cell menu-item-cell-description">
+		<div class="menu-container">
+			<div class="menu-container-cell menu-container-cell-description">
 				<h4>Alaskan White Ale</h4>
 				<p>Brewed in Juneau, AK. This Belgian-style Whitbier has a soft, slightly sweet base with the unique spice aroma of coriander and a crisp citrus finish of orange peel.</p>
 			</div>
-			<div class="menu-item-cell menu-item-cell-abv">
+			<div class="menu-container-cell menu-container-cell-abv">
 				<h4>5.3% ABV</h4>
 			</div>
-			<div class="menu-item-cell menu-item-cell-last">
+			<div class="menu-container-cell menu-container-cell-last">
 				<span class="rating">3.5/4</span>
 			</div>
 		</div>
