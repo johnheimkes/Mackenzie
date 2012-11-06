@@ -48,8 +48,11 @@ function mack_register_post_types()
 				'editor',
 				'author',
 				'thumbnail',
-				'custom-fields',
 				'revisions',
+			),
+			'has_archive' => 'food',
+			'rewrite' => array(
+				'slug' => 'food',
 			),
 		)
 	);
@@ -70,8 +73,11 @@ function mack_register_post_types()
 				'editor',
 				'author',
 				'thumbnail',
-				'custom-fields',
 				'revisions',
+			),
+			'has_archive' => 'drink',
+			'rewrite' => array(
+				'slug' => 'drinks',
 			),
 		)
 	);
@@ -92,10 +98,12 @@ function mack_register_post_types()
 				'editor',
 				'author',
 				'thumbnail',
-				'custom-fields',
 				'revisions',
 			),
-			'has_archive' => 'merchandise'
+			'has_archive' => 'merchandise',
+			'rewrite' => array(
+				'slug' => 'merchandise',
+			),
 		)
 	);
 	
