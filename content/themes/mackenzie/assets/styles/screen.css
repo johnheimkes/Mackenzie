@@ -105,7 +105,8 @@ nav .menu {
 	text-decoration: none;
 }
 
-.menu-item a:hover {
+.menu-item a:hover,
+.current-menu-item a {
 	border-bottom: 2px solid #7b7839;
 	color: #e6e06a;
 }
@@ -453,13 +454,15 @@ nav .menu {
 
 .page-heading-drinks { background: url('../images/heading-drinks.png') no-repeat top left; }
 
+.page-heading-events { background: url('../images/heading-events.png') no-repeat top left; }
+
 .page-head-description {
 	font-size: 14px;
 	line-height: 1.3;
 	color: #391905;
 }
 
-.menu-container {
+.menu-wrapper {
 	overflow: hidden;
 }
 
@@ -492,6 +495,12 @@ nav .menu {
 
 .menu-nav-entrees { padding: 10px 69px; }
 
+.menu-nav-parties { padding: 10px 40px; }
+
+.menu-nav-sports { padding: 10px 55px; }
+
+.menu-nav-entertainment { padding: 10px 29px; }
+
 .menu-nav-item a {
 	display: block;
 	height: 19px;
@@ -499,7 +508,7 @@ nav .menu {
 }
 
 .menu-nav-item a:hover,
-.menu-nav-item a.current {
+.menu-nav-item a.current-menu-item {
 	background-position: bottom;
 }
 
@@ -538,8 +547,82 @@ nav .menu {
 	background: url('../images/heading-entrees.png') no-repeat top left;
 }
 
-.menu-head { border-bottom: 2px solid #cabfb9; }
+.menu-nav-parties a {
+	width: 138px;
+	background: url('../images/heading-parties.png') no-repeat top left;
+}
 
+.menu-nav-sports a {
+	width: 121px;
+	background: url('../images/heading-sports.png') no-repeat top left;
+}
+
+.menu-nav-entertainment a {
+	width: 277px;
+	background: url('../images/heading-entertainment.png') no-repeat top left;
+}
+
+.menu-head {
+	overflow: hidden;
+	margin-top: 25px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #cabfb9;
+	font-family: 'bitterregular';
+	font-size: 14px;
+	color: #c38d48;
+}
+
+.menu-heading-container,
+.menu-container-cell { float: left; }
+
+.menu-heading-name { margin-left: 18px; }
+
+.menu-heading-abv { margin-left: 294px; }
+
+.menu-heading-last {
+	float: right;
+	margin-right: 37px;
+}
+
+.menu-container {
+	overflow: hidden;
+	padding: 23px 18px 18px;
+	border-bottom: 2px solid #cabfb9;
+	line-height: 1.3;
+	color: #391905;
+}
+
+.menu-container-cell-description {
+	width: 370px;
+	font-size: 12px;
+}
+
+.menu-container-cell-description h4 {
+	margin-bottom: 5px;
+	font-family: 'bitterbold';
+	font-size: 16px;
+}
+
+.menu-container-cell-abv {
+	margin-left: 135px;
+	font-family: 'bitterbold';
+	font-size: 16px;
+}
+
+.menu-container-cell-last {
+	float: right;
+	margin-right: 16px;
+	font-family: 'bitterbold';
+	font-size: 16px;
+}
+
+.events-page-head {
+	border: none;
+}
+
+.events-carousel {
+	margin: 0 0 30px -30px;
+}
 
 
 /* ---------------------------------------------------------------------

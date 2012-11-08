@@ -26,7 +26,7 @@
 	</div>
 </div>
 
-<div class="menu-container">
+<div class="menu-wrapper">
 	<ul class="menu-nav menu-nav-drinks">
 		<li class="menu-nav-item menu-nav-beer">
 			<a href="#">Beer</a>
