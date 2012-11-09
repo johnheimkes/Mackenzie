@@ -458,6 +458,8 @@ nav .menu {
 
 .page-heading-merchandise { background: url('../images/heading-merchandise.png') no-repeat top left; }
 
+.page-heading-contact { background: url('../images/heading-contact-us.png') no-repeat top left; }
+
 .page-head-description {
 	font-size: 14px;
 	line-height: 1.3;
@@ -662,6 +664,80 @@ nav .menu {
 	padding:12px;
 	width:247px;
 	height:182px;
+}
+
+/* ---------------------------------------------------------------------
+= Contact
+------------------------------------------------------------------------ */
+
+.contact-map {
+	background:url('../images/bg-maps.png') no-repeat top left;
+	width:819px;
+	height:468px;
+	border-bottom:double 3px #c4bab3;
+	padding-bottom:57px;
+	margin-left:-15px;
+}
+.contact-map img {
+	padding:16px;
+}
+
+.contact-heading {
+	height: 22px;
+	text-indent: -9999px;
+}
+.contact-heading-address{ background: url('../images/heading-address.png') no-repeat top left; }
+.contact-heading-phone{ background: url('../images/heading-phone.png') no-repeat top left; margin-top:26px; }
+.contact-heading-email{ background: url('../images/heading-email.png') no-repeat top left; margin-top:26px; }
+
+.contact-content {
+	font-family: 'bitterregular';
+	font-size:14px;
+	color:#845a3f;
+	overflow:hidden;
+	margin-top:57px;
+}
+
+.contact-content p span {
+	display:block;
+}
+.contact-information {
+	float:left;
+}
+.contact-form {
+	float:right;
+	width: 408px;
+}
+.contact-form .gform_wrapper {
+	margin:0 !important;
+}
+.contact-form form {
+	position:relative;
+}
+.contact-form label {
+	display: none !important;
+}
+.contact-form input.medium, .contact-form textarea.medium {
+	color: #c38d48;
+	width: 408px !important;
+	margin-bottom: 25px !important;
+	border: none;
+}
+.contact-form textarea.medium {
+	height: 209px !important;
+	padding: 10px;
+	background:url('../images/bg-textarea.png') no-repeat top left;
+}
+.contact-form input.medium {
+	height: 34px !important;
+	padding: 0 10px !important;
+	background:url('../images/bg-input.png') no-repeat top left;
+}
+.contact-form input.gform_image_button{
+	margin:0 !important;
+	position: absolute;
+	top: 349px;
+	right: 0;
 }
 
 /* ---------------------------------------------------------------------
