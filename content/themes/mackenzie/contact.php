@@ -16,7 +16,6 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <div class="page-head merch-head">
 	<div class="page-head-description">
-		
 		<h2 class="page-heading page-heading-contact"><?php the_title(); ?></h2>
 	</div>
 </div>

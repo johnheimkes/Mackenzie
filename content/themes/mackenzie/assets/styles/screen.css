@@ -676,7 +676,7 @@ nav .menu {
 	height:468px;
 	border-bottom:double 3px #c4bab3;
 	padding-bottom:57px;
-	margin-left:-15px;
+	margin-left:-150px;
 }
 .contact-map img {
 	padding:16px;
@@ -692,10 +692,10 @@ nav .menu {
 
 .contact-content {
 	font-family: 'bitterregular';
-	font-size:14px;
-	color:#845a3f;
-	overflow:hidden;
-	margin-top:57px;
+	font-size: 14px;
+	color: #845a3f;
+	overflow: hidden;
+	margin-top: 57px;
 }
 
 .contact-content p span {
