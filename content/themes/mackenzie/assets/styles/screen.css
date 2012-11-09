@@ -456,6 +456,8 @@ nav .menu {
 
 .page-heading-events { background: url('../images/heading-events.png') no-repeat top left; }
 
+.page-heading-merchandise { background: url('../images/heading-merchandise.png') no-repeat top left; }
+
 .page-head-description {
 	font-size: 14px;
 	line-height: 1.3;
@@ -624,6 +626,43 @@ nav .menu {
 	margin: 0 0 30px -30px;
 }
 
+/* ---------------------------------------------------------------------
+= Merch
+------------------------------------------------------------------------ */
+.merch-head {
+	border-bottom:none;
+	padding-bottom: 20px;
+}
+.merch-wrapper {
+	overflow:hidden;
+}
+.merch-item {
+	width:271px;
+	float:left;
+}
+.heading-merch {
+	font-family: 'bitterbold';
+	font-size: 16px;
+	color: #391905;
+	text-transform: uppercase;
+	margin: 10px 5px;
+}
+.merch-price {
+	font-family: 'bitteritalic';
+	font-size: 16px;
+	color: #845a3f;
+	margin-left:5px;
+}
+.merch-image {
+	background:url('../images/bg-merch.png') no-repeat top left;
+	width:271px;
+	height:207px;
+}
+.merch-image img {
+	padding:12px;
+	width:247px;
+	height:182px;
+}
 
 /* ---------------------------------------------------------------------
 = Global
