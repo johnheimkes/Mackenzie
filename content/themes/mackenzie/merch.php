@@ -35,7 +35,6 @@
 					<img src="<?php echo $image[0]; ?>" width="247" height="182"/>
 				</div>
 			<?php endif; ?>
-			
 			<h3 class="heading-merch"><?php the_title(); ?></h3>
 			<div class="merch-price"><?php the_content(); ?></div>
 
