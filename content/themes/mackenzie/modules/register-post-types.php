@@ -95,10 +95,7 @@ function mack_register_post_types()
 			'public' => true,
 			'supports' => array(
 				'title',
-				'editor',
-				'author',
 				'thumbnail',
-				'revisions',
 			),
 			'has_archive' => true,
 			'rewrite' => array(

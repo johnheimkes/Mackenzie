@@ -22,7 +22,7 @@
 </div>
 <div class="merch-wrapper">
 	<?php
-		$args = array( 'post_type' => 'mack_merchandise', 'posts_per_page' => 10 );
+		$args = array( 'post_type' => 'mack_merchandise', 'posts_per_page' => 20 );
 		$loop = new WP_Query( $args );
 		while ( $loop->have_posts() ) : $loop->the_post();
 	?>
@@ -36,7 +36,9 @@
 				</div>
 			<?php endif; ?>
 			<h3 class="heading-merch"><?php the_title(); ?></h3>
-			<div class="merch-price"><?php the_content(); ?></div>
+			<?php if(get_field('price')) : ?>
+				<div class="merch-price">$<?php the_field('price'); ?></div>
+			<?php endif; ?>
 
 		</div>
 		
