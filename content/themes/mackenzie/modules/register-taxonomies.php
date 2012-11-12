@@ -61,7 +61,7 @@ function mack_register_taxonomies()
             'hierarchical' => true,
             'show_ui'      => true,
             'rewrite'      => array(
-				'slug' => 'drink-category'
+				'slug' => 'drink'
 			),
         )
     );

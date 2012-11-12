@@ -10,6 +10,11 @@
  * @author John Heimkes IV <john@markupisart.com>
  * @version 1.0
  */
+ 
+ $carousel_post = new WP_Query(array(
+	 'posts_per_page'	=> -1,
+	 'post_type'		=> 'mack_carousel',
+ ));
 ?>
 
 <?php get_header(); ?>
@@ -20,15 +25,17 @@
 </div>
 
 <div class="main-carousel">
-	<div class="carousel">
+	<div class="carousel" id="home-carousel">
+		<?php if ( $carousel_post->have_posts() ) : while ( $carousel_post->have_posts() ) : $carousel_post->the_post(); ?>
 		<div class="carousel-slide">
 			<div class="carousel-shadow"></div>
-			<img src="http://placekitten.com/800/340" alt="Kitties!!!!" />
+			<?php the_post_thumbnail(); ?>
 		</div>
+		<?php endwhile; endif; ?>
 	</div>
 	<ul class="main-carousel-nav">
 		<li class="main-carousel-nav-item">
-			<a href="<?php echo site_url(); ?>/drinks" class="main-carousel-beer-link main-carousel-link">Beer</a>
+			<a href="<?php echo site_url(); ?>/drink" class="main-carousel-beer-link main-carousel-link">Beer</a>
 		</li>
 		
 		<li class="main-carousel-nav-item main-carousel-sep">&amp;</li>
@@ -82,7 +89,7 @@
 			</div>
 		</div>
 		
-		<a href="<?php echo site_url(); ?>/drinks" class="drinks-link">See full beer list &amp; rate this beer.</a>
+		<a href="<?php echo site_url(); ?>/drink" class="drinks-link">See full beer list &amp; rate this beer.</a>
 		
 		<h3 class="heading-section try-this-events">Events</h3>
 		<p class="special-events-info align-left">Join us the first Wednesday of the month for music with Katey Bellville &amp; Friends - Country Bluegrass. Music from 9 - 11 pm</p>

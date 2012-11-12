@@ -52,7 +52,7 @@ function mack_register_post_types()
 			),
 			'has_archive' => true,
 			'rewrite' => array(
-				'slug' => 'food',
+				'slug' => 'menu',
 			),
 		)
 	);

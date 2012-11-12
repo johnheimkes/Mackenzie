@@ -10,6 +10,7 @@ jQuery(function($) {
 
     // Initialize!
     NERDThemeJS($);
+	$('#home-carousel').cycle();
 
 });
 

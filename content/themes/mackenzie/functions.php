@@ -59,8 +59,17 @@ function nerderyEnqueueScripts()
         '1.0',
         true
     );
+	
+    wp_register_script(
+		'nerdery-cycle',
+        NERDERY_THEME_PATH_URL . 'assets/scripts/jquery.cycle.js',
+        array('jquery'),
+        '1.0',
+        true
+    );
 
     wp_enqueue_script('nerdery-global');
+	wp_enqueue_script('nerdery-cycle');
 
     // Comment reply script for threaded comments (registered in WP core)
     if (is_singular() && get_option('thread_comments')) {

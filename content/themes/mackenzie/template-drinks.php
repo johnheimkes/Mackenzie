@@ -34,16 +34,16 @@
 <div class="menu-wrapper">
 	<ul class="menu-nav menu-nav-drinks">
 		<li class="menu-nav-item menu-nav-beer">
-			<a href="<?php echo site_url(); ?>/drink-category/beer">Beer</a>
+			<a href="<?php echo site_url(); ?>/drink/beer">Beer</a>
 		</li>
 		<li class="menu-nav-item menu-nav-wine">
-			<a href="<?php echo site_url(); ?>/drink-category/wind">Wine</a>
+			<a href="<?php echo site_url(); ?>/drink/wine">Wine</a>
 		</li>
 		<li class="menu-nav-item menu-nav-liquor">
-			<a href="<?php echo site_url(); ?>/drink-category/wine">Liquor</a>
+			<a href="<?php echo site_url(); ?>/drink/liquor">Liquor</a>
 		</li>
 		<li class="menu-nav-item menu-nav-nonalcoholic">
-			<a href="<?php echo site_url(); ?>/drink-category/non-alcoholic">Non-Alcoholic</a>
+			<a href="<?php echo site_url(); ?>/drink/non-alcoholic">Non-Alcoholic</a>
 		</li>
 	</ul>
 	
