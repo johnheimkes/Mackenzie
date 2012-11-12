@@ -28,13 +28,13 @@
 	</div>
 	<ul class="main-carousel-nav">
 		<li class="main-carousel-nav-item">
-			<a href="<?php echo site_url(); ?>drinks" class="main-carousel-beer-link main-carousel-link">Beer</a>
+			<a href="<?php echo site_url(); ?>/drinks" class="main-carousel-beer-link main-carousel-link">Beer</a>
 		</li>
 		
 		<li class="main-carousel-nav-item main-carousel-sep">&amp;</li>
 		
 		<li class="main-carousel-nav-item">
-			<a href="<?php echo site_url(); ?>food" class="main-carousel-food-link main-carousel-link">Food</a>
+			<a href="<?php echo site_url(); ?>/food" class="main-carousel-food-link main-carousel-link">Food</a>
 		</li>
 	</ul>
 </div>
@@ -82,7 +82,7 @@
 			</div>
 		</div>
 		
-		<a href="<?php echo site_url(); ?>drinks" class="drinks-link">See full beer list &amp; rate this beer.</a>
+		<a href="<?php echo site_url(); ?>/drinks" class="drinks-link">See full beer list &amp; rate this beer.</a>
 		
 		<h3 class="heading-section try-this-events">Events</h3>
 		<p class="special-events-info align-left">Join us the first Wednesday of the month for music with Katey Bellville &amp; Friends - Country Bluegrass. Music from 9 - 11 pm</p>
