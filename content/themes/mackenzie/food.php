@@ -10,15 +10,20 @@
  * @author
  * @version 1.0
  */
+ 
+ $food_post = new WP_Query(array(
+	 'posts_per_page'	=> -1,
+	 'post_type'		=> 'mack_food',
+ ));
 ?>
 <?php get_header(); ?>
 
 <div class="page-head">
 	<div class="page-head-description">
-		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		<h2 class="page-heading page-heading-food"><?php the_title(); ?></h2>
-			<?php the_content(); ?>
-		<?php endwhile; endif; ?>
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	<h2 class="page-heading page-heading-food"><?php the_title(); ?></h2>
+		<?php the_content(); ?>
+	<?php endwhile; endif; ?>
 	</div>
 	
 	<div class="page-head-photo-container">
@@ -29,13 +34,13 @@
 <div class="menu-wrapper">
 	<ul class="menu-nav menu-nav-drinks">
 		<li class="menu-nav-item menu-nav-specials">
-			<a href="#">Specials</a>
+			<a href="<?php echo site_url() ?>/food-category/specials">Specials</a>
 		</li>
 		<li class="menu-nav-item menu-nav-starters">
-			<a href="#">Starters</a>
+			<a href="<?php echo site_url() ?>/food-category/starters">Starters</a>
 		</li>
 		<li class="menu-nav-item menu-nav-entrees">
-			<a href="#">Entrees</a>
+			<a href="<?php echo site_url() ?>/food-category/entrees">Entrees</a>
 		</li>
 	</ul>
 	
@@ -48,45 +53,17 @@
 				<h3 class="menu-heading">Price</h3>
 			</div>
 		</div>
-		<!-- begin if -->
+		<?php if ( $food_post->have_posts() ) : while ( $food_post->have_posts() ) : $food_post->the_post(); ?>
 		<div class="menu-container">
 			<div class="menu-container-cell menu-container-cell-description">
-				<h4>BuffaloChicken Sammich</h4>
-				<p>Brewed in Juneau, AK. This Belgian-style Whitbier has a soft, slightly sweet base with the unique spice aroma of coriander and a crisp citrus finish of orange peel.</p>
+				<h4><?php the_title(); ?></h4>
+				<p><?php the_content(); ?></p>
 			</div>
 			<div class="menu-container-cell menu-container-cell-last">
-				<span class="rating">$8.50</span>
+				<span class="food-price">$<?php if (get_field('food_price')) : the_field('food_price'); ?><?php else : ?>N/A<?php endif; ?></span>
 			</div>
 		</div>
-		<!-- endif -->
-		
-		
-		<div class="menu-head">
-			<div class="menu-heading-container menu-heading-name">
-				<h3 class="menu-heading">Food Category</h3>
-			</div>
-			<div class="menu-heading-container menu-heading-last">
-				<h3 class="menu-heading">Price</h3>
-			</div>
-		</div>
-		<div class="menu-container">
-			<div class="menu-container-cell menu-container-cell-description">
-				<h4>BuffaloChicken Sammich</h4>
-				<p>Brewed in Juneau, AK. This Belgian-style Whitbier has a soft, slightly sweet base with the unique spice aroma of coriander and a crisp citrus finish of orange peel.</p>
-			</div>
-			<div class="menu-container-cell menu-container-cell-last">
-				<span class="rating">$8.50</span>
-			</div>
-		</div>
-		<div class="menu-container">
-			<div class="menu-container-cell menu-container-cell-description">
-				<h4>BuffaloChicken Sammich</h4>
-				<p>Brewed in Juneau, AK. This Belgian-style Whitbier has a soft, slightly sweet base with the unique spice aroma of coriander and a crisp citrus finish of orange peel.</p>
-			</div>
-			<div class="menu-container-cell menu-container-cell-last">
-				<span class="rating">$8.50</span>
-			</div>
-		</div>
+		<?php endwhile; endif; ?>
 	</div>
 </div>
 

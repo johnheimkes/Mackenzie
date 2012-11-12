@@ -76,11 +76,13 @@ nav {
 
 nav .menu {
 	position: relative;
+	list-style: none;
 	left: 28px;
 }
 
 .menu-item {
 	float: left;
+	padding: 0;
 }
 
 .menu-item:nth-child(-n+3) {
@@ -91,7 +93,7 @@ nav .menu {
 	margin: 20px 12px 0;
 }
 
-#menu-item-27 {
+.menu-item:nth-child(4) {
 	margin-left: 224px;
 }
 
@@ -217,6 +219,7 @@ nav .menu {
 
 .main-carousel-nav-item {
 	display: inline-block;
+	margin: 0;
 	text-indent: -9999px;
 	vertical-align: middle;
 }
@@ -339,6 +342,7 @@ nav .menu {
 .list-specials {
 	font-family: 'bitteritalic';
 	font-size: 18px;
+	list-style: none;
 }
 
 .list-specials-food {
@@ -478,7 +482,7 @@ nav .menu {
 
 .menu-nav-item {
 	float: left;
-	margin-bottom: 5px;
+	margin: 0 0 5px;
 	border-left: 4px solid #d9c9b4;
 }
 
@@ -486,24 +490,24 @@ nav .menu {
 	border: none;
 }
 
-.menu-nav-beer,
-.menu-nav-wine { padding: 10px 36px; }
+li.menu-nav-beer,
+li.menu-nav-wine { padding: 10px 36px; }
 
-.menu-nav-liquor { padding: 10px 27px; }
+li.menu-nav-liquor { padding: 10px 27px; }
 
-.menu-nav-nonalcoholic { padding: 10px 23px; }
+li.menu-nav-nonalcoholic { padding: 10px 23px; }
 
-.menu-nav-specials { padding: 10px 31px; }
+li.menu-nav-specials { padding: 10px 31px; }
 
-.menu-nav-starters { padding: 10px 61px; }
+li.menu-nav-starters { padding: 10px 61px; }
 
-.menu-nav-entrees { padding: 10px 69px; }
+li.menu-nav-entrees { padding: 10px 69px; }
 
-.menu-nav-parties { padding: 10px 40px; }
+li.menu-nav-parties { padding: 10px 40px; }
 
-.menu-nav-sports { padding: 10px 55px; }
+li.menu-nav-sports { padding: 10px 55px; }
 
-.menu-nav-entertainment { padding: 10px 29px; }
+li.menu-nav-entertainment { padding: 10px 29px; }
 
 .menu-nav-item a {
 	display: block;
@@ -576,16 +580,21 @@ nav .menu {
 	color: #c38d48;
 }
 
+.menu-heading {
+	font-family: 'bitterregular';
+	font-size: 14px;
+}
+
 .menu-heading-container,
 .menu-container-cell { float: left; }
 
 .menu-heading-name { margin-left: 18px; }
 
-.menu-heading-abv { margin-left: 294px; }
+.menu-heading-abv { margin-left: 277px; }
 
 .menu-heading-last {
 	float: right;
-	margin-right: 37px;
+	margin-right: 45px;
 }
 
 .menu-container {
@@ -615,17 +624,76 @@ nav .menu {
 
 .menu-container-cell-last {
 	float: right;
-	margin-right: 16px;
 	font-family: 'bitterbold';
 	font-size: 16px;
 }
 
-.events-page-head {
+.food-price { margin-right: 18px; }
+
+.rating {
+	display: block;
+	width: 103px;
+	height: 36px;
+	background: url('../images/bg-ratings.png') no-repeat;
+	text-indent: -9999px;
+}
+
+.rated-1 { background-position: left top; }
+
+.rated-1\.5 { background-position: left -36px; }
+
+.rated-2 { background-position: left -72px; }
+
+.rated-2\.5 { background-position: left -108px; }
+
+.rated-3 { background-position: left -144px; }
+
+.rated-3\.5 { background-position: left -180px; }
+
+.rated-4 { background-position: left -216px; }
+
+
+.events-page-head { border: none; }
+
+.events-carousel { margin: 0 0 30px -30px; }
+
+.wp-image-69 {
+	position: absolute;
+	right: 78px;
+	margin-top: 34px;
+}
+
+.parent-pageid-13 .menu-container {
 	border: none;
 }
 
-.events-carousel {
-	margin: 0 0 30px -30px;
+.page-id-72 .menu-container {
+	padding: 23px 0 18px;
+}
+
+.event-list {
+	list-style: none;
+}
+
+.event-list li {
+	margin: 0;
+	padding: 15px 18px;
+	border-bottom: 2px solid #CABFB9;
+	position: relative;
+}
+
+.event-title,
+.event-description {
+	width: 550px;
+}
+
+.event-date {
+	display: block;
+	width: 115px;
+	height: 115px;
+	position: absolute;
+	top: 16px;
+	right: 18px;
 }
 
 /* ---------------------------------------------------------------------
@@ -756,3 +824,85 @@ strong { font-weight: bold; }
 em { font-style: italic; }
 
 .page .page-content p { margin-bottom: 10px; }
+
+p {
+	margin-bottom: 10px;
+	font-size: 1em;
+	line-height: 1.2;
+}
+
+h2, h3, h4, h5, h6 {
+	margin-bottom: 10px;
+	font-family: 'bitterbold', Georgia, Times, serif;
+}
+
+h3 {
+	font-size: 1.5em;
+	margin-top: 20px;
+}
+
+h4 {
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+h4 a {
+	border: none;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+h5 {
+	font-size: 1em;
+}
+
+h6 {
+	font-size: .86em;
+}
+
+ol li,
+ul li {
+	margin: 0 0 2px 23px;
+}
+
+ul, ol {
+	list-style: disc;
+}
+
+ul a {
+	text-decoration: none;
+	border-bottom: none;
+}
+
+ol {
+	list-style: decimal;
+}
+
+/*================================================  Images and captions  ================================================*/
+
+.wp-caption {
+	text-align: center;
+	background-color: white;
+	padding-top: 4px;
+	margin: 10px 10px 5px 10px;
+	border: none;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption a img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption-dd {
+	font-size: .86em;
+	line-height: 1.2;
+	padding: 5px 4px;
+	margin: 0;
+}
