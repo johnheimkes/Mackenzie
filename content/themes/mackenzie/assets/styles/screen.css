@@ -80,24 +80,24 @@ nav .menu {
 	left: 28px;
 }
 
-.menu-item {
+nav .menu-item {
 	float: left;
 	padding: 0;
 }
 
-.menu-item:nth-child(-n+3) {
+nav .menu-item:nth-child(-n+3) {
 	margin: 20px 23px 0;
 }
 
-.menu-item:nth-child(n+4) {
+nav .menu-item:nth-child(n+4) {
 	margin: 20px 12px 0;
 }
 
-.menu-item:nth-child(4) {
+nav .menu-item:nth-child(4) {
 	margin-left: 224px;
 }
 
-.menu-item a {
+nav .menu-item a {
 	border-bottom: 2px solid #1a2f15;
 	color: #001c00;
 	font-family: 'bitterbold';
@@ -107,8 +107,8 @@ nav .menu {
 	text-decoration: none;
 }
 
-.menu-item a:hover,
-.current-menu-item a {
+nav .menu-item a:hover,
+nav .current-menu-item a {
 	border-bottom: 2px solid #7b7839;
 	color: #e6e06a;
 }
@@ -198,6 +198,7 @@ nav .menu {
 	border: 9px solid #ffffff;
 	position: relative;
 	z-index: 1;
+	overflow: hidden;
 }
 
 .carousel-shadow {
@@ -208,6 +209,14 @@ nav .menu {
 	-webkit-box-shadow: inset 0px 0px 14px 1px #000000;
 	-moz-box-shadow: inset 0px 0px 14px 1px #000000;
 	box-shadow: inset 0px 0px 14px 1px #000000;
+}
+
+.carousel-slide {
+}
+
+.carousel-slide img {
+	width: 100%;
+	height: auto;
 }
 
 .main-carousel-nav {
@@ -227,23 +236,26 @@ nav .menu {
 .main-carousel-link {
 	display: block;
 	text-decoration: none;
-}
-
-.main-carousel-link:hover {
-	background-position: bottom;
+	position: relative;
 }
 
 .main-carousel-beer-link {
 	width: 354px;
 	height: 123px;
 	background: url('../images/link-beer.png') no-repeat top left;
+	left: 15px;
 }
 
 .main-carousel-food-link {
 	width: 362px;
 	height: 123px;
 	background: url('../images/link-food.png') no-repeat top left;
+	left: -15px;
 }
+
+.main-carousel-food-link:hover { background-position: 0 -121px; }
+
+.main-carousel-beer-link:hover { background-position: 0 -122px; }
 
 .main-carousel-sep {
 	width: 97px;
@@ -347,6 +359,10 @@ nav .menu {
 
 .list-specials-food {
 	margin-bottom: 80px;
+}
+
+.list-specials li {
+	margin: 0;
 }
 
 .dont-know {
@@ -478,30 +494,33 @@ nav .menu {
 	margin-top: 30px;
 	border-bottom: 4px solid #d6c6b1;
 	overflow: hidden;
+	list-style: none;
 }
 
-.menu-nav-item {
+.menu-nav-item,
+.menu-item-type-taxonomy {
 	float: left;
 	margin: 0 0 5px;
 	border-left: 4px solid #d9c9b4;
 }
 
-.menu-nav-item:first-child {
+.menu-nav-item:first-child,
+.menu-item-type-taxonomy:first-child {
 	border: none;
 }
 
-li.menu-nav-beer,
-li.menu-nav-wine { padding: 10px 36px; }
+li.menu-item-138,
+li.menu-item-139 { padding: 10px 36px; }
 
-li.menu-nav-liquor { padding: 10px 27px; }
+li.menu-item-140 { padding: 10px 27px; }
 
-li.menu-nav-nonalcoholic { padding: 10px 23px; }
+li.menu-item-141 { padding: 10px 23px; }
 
-li.menu-nav-specials { padding: 10px 31px; }
+li.menu-item-136 { padding: 10px 31px; }
 
-li.menu-nav-starters { padding: 10px 61px; }
+li.menu-item-135 { padding: 10px 61px; }
 
-li.menu-nav-entrees { padding: 10px 69px; }
+li.menu-item-137 { padding: 10px 69px; }
 
 li.menu-nav-parties { padding: 10px 40px; }
 
@@ -509,48 +528,51 @@ li.menu-nav-sports { padding: 10px 55px; }
 
 li.menu-nav-entertainment { padding: 10px 29px; }
 
-.menu-nav-item a {
+.menu-nav-item a,
+.menu-item-type-taxonomy a {
 	display: block;
 	height: 19px;
 	text-indent: -9999px;
 }
 
 .menu-nav-item a:hover,
-.menu-nav-item a.current-menu-item {
+.menu-nav-item a.current-menu-item,
+.menu-item-type-taxonomy a:hover,
+.menu-item-type-taxonomy.current-menu-item a {
 	background-position: bottom;
 }
 
-.menu-nav-beer a {
+.menu-item-138 a {
 	width: 83px;
 	background: url('../images/heading-beer.png') no-repeat top left;
 }
 
-.menu-nav-wine a {
+.menu-item-139 a {
 	width: 84px;
 	background: url('../images/heading-wine.png') no-repeat top left;
 }
 
-.menu-nav-liquor a {
+.menu-item-140 a {
 	width: 116px;
 	background: url('../images/heading-liquor.png') no-repeat top left;
 }
 
-.menu-nav-nonalcoholic a {
+.menu-item-141 a {
 	width: 251px;
 	background: url('../images/heading-nonalcoholic.png') no-repeat top left;
 }
 
-.menu-nav-specials a {
+.menu-item-136 a {
 	width: 150px;
 	background: url('../images/heading-specials.png') no-repeat top left;
 }
 
-.menu-nav-starters a {
+.menu-item-135 a {
 	width: 166px;
 	background: url('../images/heading-starters.png') no-repeat top left;
 }
 
-.menu-nav-entrees a {
+.menu-item-137 a {
 	width: 144px;
 	background: url('../images/heading-entrees.png') no-repeat top left;
 }

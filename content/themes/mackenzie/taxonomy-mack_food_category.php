@@ -28,17 +28,11 @@
 </div>
 
 <div class="menu-wrapper">
-	<ul class="menu-nav menu-nav-drinks">
-		<li class="menu-nav-item menu-nav-specials">
-			<a href="<?php echo site_url() ?>/food-category/specials">Specials</a>
-		</li>
-		<li class="menu-nav-item menu-nav-starters">
-			<a href="<?php echo site_url() ?>/food-category/starters">Starters</a>
-		</li>
-		<li class="menu-nav-item menu-nav-entrees">
-			<a href="<?php echo site_url() ?>/food-category/entrees">Entrees</a>
-		</li>
-	</ul>
+	<?php wp_nav_menu(array(
+		'menu'			=> 'food-nav',
+		'container'		=> false,
+		'menu_class'	=> 'menu-nav-drinks menu-nav',
+	)); ?>
 	
 	<div class="menu-body">
 		<div class="menu-head">

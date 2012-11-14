@@ -31,7 +31,7 @@
 			<div class="carousel-shadow"></div>
 			<?php the_post_thumbnail(); ?>
 		</div>
-		<?php endwhile; endif; ?>
+	<?php endwhile; endif; wp_reset_query(); ?>
 	</div>
 	<ul class="main-carousel-nav">
 		<li class="main-carousel-nav-item">
@@ -58,19 +58,23 @@
 		<h3 class="heading-section">Monthly Specials</h3>
 		
 		<div class="special-list-container">
+			<?php if(get_field('food_specials_list')): ?>
 			<h4 class="heading-list">Food:</h4>
 			<ul class="list-specials list-specials-food">
-				<li>Barbacoa Tacos</li>
-				<li>Buffalo Chicken Wrap</li>
-				<li>Fish Tacos</li>
+				<?php while(has_sub_field('food_specials_list')) : ?>
+					<li><?php the_sub_field('food_special'); ?></li>
+				<?php endwhile; ?>
 			</ul>
-		
+			<?php endif; ?>
+			
+			<?php if(get_field('beer_specials_list')): ?>
 			<h4 class="heading-list">Beer:</h4>
 			<ul class="list-specials">
-				<li>Alaskan White Ale</li>
-				<li>Big Sky IPA</li>
-				<li>Summit EPA</li>
+				<?php while(has_sub_field('beer_specials_list')) : ?>
+					<li><?php the_sub_field('beer_special'); ?></li>
+				<?php endwhile; ?>
 			</ul>
+			<?php endif; ?>
 		</div>
 	</div>
 	

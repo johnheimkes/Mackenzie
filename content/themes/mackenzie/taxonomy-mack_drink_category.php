@@ -28,20 +28,11 @@
 </div>
 
 <div class="menu-wrapper">
-	<ul class="menu-nav menu-nav-drinks">
-		<li class="menu-nav-item menu-nav-beer">
-			<a href="<?php echo site_url(); ?>/drink/beer">Beer</a>
-		</li>
-		<li class="menu-nav-item menu-nav-wine">
-			<a href="<?php echo site_url(); ?>/drink/wine">Wine</a>
-		</li>
-		<li class="menu-nav-item menu-nav-liquor">
-			<a href="<?php echo site_url(); ?>/drink/liquor">Liquor</a>
-		</li>
-		<li class="menu-nav-item menu-nav-nonalcoholic">
-			<a href="<?php echo site_url(); ?>/drink/non-alcoholic">Non-Alcoholic</a>
-		</li>
-	</ul>
+	<?php wp_nav_menu(array(
+		'menu'			=> 'drinks-nav',
+		'container'		=> false,
+		'menu_class'	=> 'menu-nav-drinks menu-nav',
+	)); ?>
 	
 	<div class="menu-body">
 		<div class="menu-head">
