@@ -108,7 +108,8 @@ nav .menu-item a {
 }
 
 nav .menu-item a:hover,
-nav .current-menu-item a {
+nav .current-menu-item a,
+nav .current-page-ancestor a {
 	border-bottom: 2px solid #7b7839;
 	color: #e6e06a;
 }
@@ -522,11 +523,11 @@ li.menu-item-135 { padding: 10px 61px; }
 
 li.menu-item-137 { padding: 10px 69px; }
 
-li.menu-nav-parties { padding: 10px 40px; }
+li.menu-nav-parties { padding: 10px 65px; }
 
-li.menu-nav-sports { padding: 10px 55px; }
+li.menu-nav-sports { padding: 10px 65px; }
 
-li.menu-nav-entertainment { padding: 10px 29px; }
+li.menu-nav-events-small { padding: 10px 67px; }
 
 .menu-nav-item a,
 .menu-item-type-taxonomy a {
@@ -587,9 +588,9 @@ li.menu-nav-entertainment { padding: 10px 29px; }
 	background: url('../images/heading-sports.png') no-repeat top left;
 }
 
-.menu-nav-entertainment a {
-	width: 277px;
-	background: url('../images/heading-entertainment.png') no-repeat top left;
+.menu-nav-events-small a {
+	width: 125px;
+	background: url('../images/heading-events-small.png') no-repeat top left;
 }
 
 .menu-head {
@@ -709,13 +710,22 @@ li.menu-nav-entertainment { padding: 10px 29px; }
 	width: 550px;
 }
 
-.event-date {
-	display: block;
-	width: 115px;
-	height: 115px;
+.event-date-wrap {
+	background: url('../images/bg-cap.png') no-repeat left top;
 	position: absolute;
 	top: 16px;
 	right: 18px;
+	width: 123px;
+	height: 124px;
+	text-align: center;
+	font-size: 0;
+}
+
+.event-date {
+	display: block;
+	padding: 30px 31px 0;
+	font-size: 23px;
+	color: #dfe0e0;
 }
 
 /* ---------------------------------------------------------------------
@@ -764,11 +774,12 @@ li.menu-nav-entertainment { padding: 10px 29px; }
 	background:url('../images/bg-maps.png') no-repeat top left;
 	width:819px;
 	height:468px;
-	border-bottom:double 3px #c4bab3;
+	border-bottom: double 3px #c4bab3;
 	padding-bottom:57px;
 	margin-left:-15px;
 }
-.contact-map img {
+
+.contact-map-wrapper {
 	padding:16px;
 }
 
@@ -796,7 +807,7 @@ li.menu-nav-entertainment { padding: 10px 29px; }
 }
 .contact-form {
 	float:right;
-	width: 408px;
+	width: 423px;
 }
 .contact-form .gform_wrapper {
 	margin:0 !important;
@@ -898,6 +909,14 @@ ul a {
 
 ol {
 	list-style: decimal;
+}
+
+p > a {
+	color: #391905;
+}
+
+p > a:hover {
+	color: #845A3F;
 }
 
 /*================================================  Images and captions  ================================================*/

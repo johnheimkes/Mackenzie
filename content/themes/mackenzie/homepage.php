@@ -15,13 +15,28 @@
 	 'posts_per_page'	=> -1,
 	 'post_type'		=> 'mack_carousel',
  ));
+ 
+ $beer_please_post = new WP_Query(array(
+	 'posts_per_page'	=> 1,
+	 'orderby'			=> 'rand',
+	 'post_type'		=> 'mack_drink',
+	 'tax_query'		=> array(
+		 'taxonomy'	=> 'mack_drink_category',
+		 'field'	=> 'slug',
+		 'terms'	=> 'beer',
+	 ),
+ ));
 ?>
 
 <?php get_header(); ?>
 
 <div class="tagline align-center">
 	<h2 class="tagline-heading"><?php bloginfo('description'); ?></h2>
-	<p>MACKENZIE is known throughout the Twin Cities as having one of the best selections of Craft beers available.</p>
+	<?php
+	if ( have_posts() ) : while ( have_posts() ) : the_post();
+		the_content();
+	 endwhile; endif; 
+	?>
 </div>
 
 <div class="main-carousel">
@@ -83,21 +98,36 @@
 	<div class="try-this">
 		<h3 class="heading-section dont-know align-left">Don't Know <span class="align-right">What To Drink?</span></h3>
 		
+	<?php if ( $beer_please_post->have_posts() ) : while ( $beer_please_post->have_posts() ) : $beer_please_post->the_post(); ?>
 		<div class="beer-generator">
-			<a href="#" class="beer-please">Beer Please</a>
+			<a href="#" class="beer-please" id="another">Beer Please</a>
 			<h4 class="try-this-heading">Try This</h4>
-			
-			<div class="beer-generator-description align-left">
-				<h5 class="beer-generator-name">Founders Centennial IPA</h5>
-				<p>Brewed in Grand Rapids, MI. Get ready to bask in the glory of the frothy heads floral bouquet. Malty undertones with the hop character for a finish that never turns too bitter. 7.2% ABV</p>
+			<div id="randombeer" class="beer-generator-description align-left">
+				<h5 class="beer-generator-name"><?php the_title(); ?></h5>
+				<?php the_content(); ?>
 			</div>
 		</div>
-		
+	<?php endwhile; endif; wp_reset_query(); ?>
+
 		<a href="<?php echo site_url(); ?>/drink" class="drinks-link">See full beer list &amp; rate this beer.</a>
 		
 		<h3 class="heading-section try-this-events">Events</h3>
 		<p class="special-events-info align-left">Join us the first Wednesday of the month for music with Katey Bellville &amp; Friends - Country Bluegrass. Music from 9 - 11 pm</p>
 	</div>
 </div>
+
+<script>
+$("a.beer-please").click(function(e) {
+    e.preventDefault();
+    $.ajax({
+        type: 'POST',
+        url: '<?php echo admin_url( 'admin-ajax.php' ); ?>',
+        data: {action: "random_beer_post"},
+        success: function(response) {
+            $(".beer-generator-description").html(response);
+        }
+    });
+});
+</script>
 
 <?php get_footer(); ?>

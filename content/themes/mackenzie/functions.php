@@ -9,13 +9,28 @@
  * @version    1.0
  */
 
+add_action( 'wp_ajax_random_beer_post', 'get_random_beer_post' );
+add_action( 'wp_ajax_nopriv_random_beer_post', 'get_random_beer_post' );
+
+function get_random_beer_post() {
+ 	if ( $beer_please_post->have_posts() ) : while ( $beer_please_post->have_posts() ) : $beer_please_post->the_post(); ?>
+		<div class="beer-generator">
+			<a href="#" class="beer-please" id="another">Beer Please</a>
+			<h4 class="try-this-heading">Try This</h4>
+			<div id="randombeer" class="beer-generator-description align-left">
+				<h5 class="beer-generator-name"><?php the_title(); ?></h5>
+				<?php the_content(); ?>
+			</div>
+		</div>
+	<?php endwhile; endif; wp_reset_query();
+}
+
+
 /**
  * Theme Supports
  */
 add_theme_support('post-thumbnails');
 add_theme_support('menus');
-
-show_admin_bar(false);
 
 /**
  * Includes
