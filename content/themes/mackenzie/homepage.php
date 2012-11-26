@@ -111,8 +111,8 @@
 
 		<a href="<?php echo site_url(); ?>/drink" class="drinks-link">See full beer list &amp; rate this beer.</a>
 		
-		<h3 class="heading-section try-this-events">Events</h3>
-		<p class="special-events-info align-left">Join us the first Wednesday of the month for music with Katey Bellville &amp; Friends - Country Bluegrass. Music from 9 - 11 pm</p>
+		<h3 class="heading-section try-this-events"><a href="<?php echo site_url(); ?>/events">Events</a></h3>
+		<p class="special-events-info align-left"><?php the_field('homepage_event') ?></p>
 	</div>
 </div>
 

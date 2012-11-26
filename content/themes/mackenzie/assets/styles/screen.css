@@ -154,10 +154,12 @@ nav .current-page-ancestor a {
 	height: 26px;
 	width: 26px;
 	text-indent: -9999px;
+	background-size: 100%;
 }
 
-.social-icon-facebook { background: url('../images/icon-fb.png') no-repeat left top; }
-.social-icon-twitter { background: url('../images/icon-twitter.png') no-repeat left top; }
+.social-icon-facebook { background: url('../images/logo-facebook.png') no-repeat left top; }
+
+.social-icon-twitter { background: url('../images/logo-twitter.png') no-repeat left top; }
 
 
 /* ---------------------------------------------------------------------
@@ -429,6 +431,15 @@ nav .current-page-ancestor a {
 .try-this-events {
 	width: 115px;
 	margin: 0 auto;
+}
+
+.try-this-events a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.try-this-events a:hover {
+	color: #845A3F;
 }
 
 .special-events-info {
@@ -735,13 +746,20 @@ li.menu-nav-events-small { padding: 10px 67px; }
 	border-bottom:none;
 	padding-bottom: 20px;
 }
+
 .merch-wrapper {
 	overflow:hidden;
+	width: 825px;
+	font-size: 0;
 }
+
 .merch-item {
-	width:271px;
-	float:left;
+ 	width:	271px;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 15px;
 }
+
 .heading-merch {
 	font-family: 'bitterbold';
 	font-size: 16px;
@@ -749,17 +767,20 @@ li.menu-nav-events-small { padding: 10px 67px; }
 	text-transform: uppercase;
 	margin: 10px 5px;
 }
+
 .merch-price {
 	font-family: 'bitteritalic';
 	font-size: 16px;
 	color: #845a3f;
 	margin-left:5px;
 }
+
 .merch-image {
 	background:url('../images/bg-merch.png') no-repeat top left;
 	width:271px;
 	height:207px;
 }
+
 .merch-image img {
 	padding:12px;
 	width:247px;

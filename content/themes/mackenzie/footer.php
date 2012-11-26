@@ -24,7 +24,7 @@
 						<a href="http://www.facebook.com/pages/Mackenzie/104970706212363?rf=111212918963278" class="social-icon-facebook" target="_blank">Facebook</a>
 					</li>
 					<li class="social-icon">
-						<a href="#" class="social-icon-twitter" target="_blank">Twitter</a>
+						<a href="http://twitter.com/mackenziepubmn" class="social-icon-twitter" target="_blank">Twitter</a>
 					</li>
 				</ul>
 			</div>
