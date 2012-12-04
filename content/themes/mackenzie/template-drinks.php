@@ -14,6 +14,8 @@
  $drink_post = new WP_Query(array(
 	 'posts_per_page'	=> -1,
 	 'post_type'		=> 'mack_drink',
+	 'order'			=> 'asc',
+	 'orderby'			=> 'title',
  ));
 ?>
 <?php get_header(); ?>
@@ -41,7 +43,7 @@
 	<div class="menu-body">
 		<div class="menu-head">
 			<div class="menu-heading-container menu-heading-name">
-				<h3 class="menu-heading">Beer Name,Location &amp; Description</h3>
+				<h3 class="menu-heading">Beer Name, Location &amp; Description</h3>
 			</div>
 			<div class="menu-heading-container menu-heading-abv">
 				<h3 class="menu-heading">ABV</h3>
