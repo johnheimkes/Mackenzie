@@ -63,7 +63,7 @@
 				<h4><?php if (get_field('drink_abv')) : the_field('drink_abv'); ?>%<?php else : ?>N/A<?php endif; ?></h4>
 			</div>
 			<div class="menu-container-cell menu-container-cell-last">
-				<span class="rating rated-<?php the_field('drink_rating'); ?>"><?php the_field('drink_rating'); ?>/4</span>
+                <?php the_ratings(); ?>
 			</div>
 		</div>
 		<?php endwhile; endif; ?>

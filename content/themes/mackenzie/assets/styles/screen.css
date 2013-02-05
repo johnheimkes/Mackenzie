@@ -664,28 +664,9 @@ li.menu-nav-events-small { padding: 10px 67px; }
 
 .food-price { margin-right: 18px; }
 
-.rating {
-	display: block;
-	width: 103px;
-	height: 36px;
-	background: url('../images/bg-ratings.png') no-repeat;
-	text-indent: -9999px;
+.post-ratings img {
+    margin-right: 2px;
 }
-
-.rated-1 { background-position: left top; }
-
-.rated-1\.5 { background-position: left -36px; }
-
-.rated-2 { background-position: left -72px; }
-
-.rated-2\.5 { background-position: left -108px; }
-
-.rated-3 { background-position: left -144px; }
-
-.rated-3\.5 { background-position: left -180px; }
-
-.rated-4 { background-position: left -216px; }
-
 
 .events-page-head { border: none; }
 
