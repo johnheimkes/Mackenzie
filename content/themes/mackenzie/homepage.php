@@ -15,17 +15,6 @@
 	 'posts_per_page'	=> -1,
 	 'post_type'		=> 'mack_carousel',
  ));
- 
- $beer_please_post = new WP_Query(array(
-	 'posts_per_page'	=> 1,
-	 'orderby'			=> 'rand',
-	 'post_type'		=> 'mack_drink',
-	 'tax_query'		=> array(
-		 'taxonomy'	=> 'mack_drink_category',
-		 'field'	=> 'slug',
-		 'terms'	=> 'beer',
-	 ),
- ));
 ?>
 
 <?php get_header(); ?>
@@ -98,16 +87,11 @@
 	<div class="try-this">
 		<h3 class="heading-section dont-know align-left">Don't Know <span class="align-right">What To Drink?</span></h3>
 		
-	<?php if ( $beer_please_post->have_posts() ) : while ( $beer_please_post->have_posts() ) : $beer_please_post->the_post(); ?>
 		<div class="beer-generator">
 			<a href="#" class="beer-please" id="another">Beer Please</a>
 			<h4 class="try-this-heading">Try This</h4>
-			<div id="randombeer" class="beer-generator-description align-left">
-				<h5 class="beer-generator-name"><?php the_title(); ?></h5>
-				<?php the_content(); ?>
-			</div>
+            <div id="randombeer" class="beer-generator-description align-left"></div>
 		</div>
-	<?php endwhile; endif; wp_reset_query(); ?>
 
 		<a href="<?php echo site_url(); ?>/drink" class="drinks-link">See full beer list &amp; rate this beer.</a>
 		
