@@ -2,7 +2,7 @@
 Global JavaScript & jQuery
 
 Target Browsers: All
-Authors: Jess Green
+Authors: John Heimkes
 
 JS Devs beware! WordPress loads jQuery in noConflict mode.
 ------------------------------------------------------------------------ */
