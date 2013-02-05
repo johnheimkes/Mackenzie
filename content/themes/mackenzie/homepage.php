@@ -100,18 +100,4 @@
 	</div>
 </div>
 
-<script>
-$("a.beer-please").click(function(e) {
-    e.preventDefault();
-    $.ajax({
-        type: 'POST',
-        url: '<?php echo admin_url( 'admin-ajax.php' ); ?>',
-        data: {action: "random_beer_post"},
-        success: function(response) {
-            $(".beer-generator-description").html(response);
-        }
-    });
-});
-</script>
-
 <?php get_footer(); ?>
