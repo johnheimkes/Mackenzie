@@ -617,6 +617,7 @@ li.menu-nav-events-small { padding: 10px 67px; }
 .menu-heading {
 	font-family: 'bitterregular';
 	font-size: 14px;
+    line-height: 1.2;
 }
 
 .menu-heading-container,

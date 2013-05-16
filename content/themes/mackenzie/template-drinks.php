@@ -43,7 +43,7 @@
 	<div class="menu-body">
 		<div class="menu-head">
 			<div class="menu-heading-container menu-heading-name">
-				<h3 class="menu-heading">Beer Name, Location &amp; Description</h3>
+				<h3 class="menu-heading">Beer Name, Location &amp; Description<br />(* denotes Minnesota brew!)</h3>
 			</div>
 			<div class="menu-heading-container menu-heading-abv">
 				<h3 class="menu-heading">ABV</h3>
