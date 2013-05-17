@@ -15,11 +15,11 @@
 <div class="page-head">
 	<div class="page-head-description">
 		<h2 class="page-heading page-heading-food">Food</h2>
-		<p>Our kitchen hours are Monday through Thursday 11:30am to 8:00pm, Friday 11:30 am to 10:00 pm, Saturday and Sunday times vary.</p>
+        <p>Our kitchen hours are Sunday &amp; Monday – 11:30 am to 11 pm, Tuesday – Thursday – 11:30 am to 12 pm and Friday & Saturday - 11:30 am to 1 am.</p>
 
-		<p>Come in and join our lunch club. Buy 8 lunches and get $5 off the next. Lunch specials served every week Monday through Friday.</p>
+        <p>Come in and join our lunch club. Buy 8 lunches and get $5 off the next!</p>
 
-		<p><strong>Check out our new personal pita pizza starting at $2.00!</strong></p>
+        <p><strong>Look for our weekly board specials and check out our new menu items!</strong></p>
 	</div>
 	
 	<div class="page-head-photo-container">
